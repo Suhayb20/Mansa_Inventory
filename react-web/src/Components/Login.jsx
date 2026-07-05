@@ -34,9 +34,9 @@ const Login = () => {
          const  response = await axios.post('http://127.0.0.1:8000/api/v1/token/', userData)
          localStorage.setItem ('accessToken', response.data.access)
          localStorage.setItem ('refreshToken', response.data.refresh)
-         console.log ('Successfully longin')
+         console.log ('Successfully logged in')
          setIsLoggedIn(true) // Update the login state in the context
-         navigate('/') 
+         navigate('/Dashboard') // Redirect to dashboard page
         
         } catch (error) {
           console.error('Invalid Credentials')
