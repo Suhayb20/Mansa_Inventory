@@ -2,7 +2,7 @@ import {useContext, } from 'react'
 import { AuthContext } from './AuthProvider'
 import { Navigate } from 'react-router-dom'
 
-function PriveteRoute({ children }) {
+function PrivateRoute({ children }) {
   const { isLoggedIn } = useContext(AuthContext)
     return isLoggedIn ? (
         children 
@@ -11,4 +11,4 @@ function PriveteRoute({ children }) {
     )
 }
 
-export default PriveteRoute
+export default PrivateRoute

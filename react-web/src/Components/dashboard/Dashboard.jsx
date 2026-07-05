@@ -18,7 +18,7 @@ const Dashboard = () => {
   }, [])
 
   return (
-    <div>Dashboard</div>
+    <div className="text-light">Dashboard</div>
   )
 }
 

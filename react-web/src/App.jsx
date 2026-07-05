@@ -8,7 +8,7 @@ import Register from './Components/Register.jsx'
 import Login from './Components/Login.jsx'
 import AuthProvider from './AuthProvider.jsx'
 import Dashboard from './Components/dashboard/Dashboard.jsx'
-import PriveteRoute from './PriveteRoute.jsx'
+import PrivateRoute from './PrivateRoute.jsx'
 import PublicRoute from './PublicRoute.jsx'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
                 <Route path='/' element={<Main />} />
                 <Route path='/register' element={<PublicRoute><Register /></PublicRoute>} />
                 <Route path='/login' element={<PublicRoute><Login /></PublicRoute>} />
-                <Route path='/dashboard' element={<PriveteRoute><Dashboard /></PriveteRoute>} />
+                <Route path='/dashboard' element={<PrivateRoute><Dashboard /></PrivateRoute>} />
             </Routes>
           <Footer />
       </BrowserRouter>
